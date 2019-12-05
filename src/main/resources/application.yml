@@ -1,0 +1,17 @@
+spring.datasource:
+    driverClassName: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:mem:myDb
+    username: sa
+    password: sa
+    continueOnError: true
+
+spring.jpa.database-platform: org.hibernate.dialect.HSQLDialect
+
+logging.level:
+    ROOT: INFO
+    org.springframework.orm.jpa: DEBUG
+    org.springframework.transaction: DEBUG
+    org.springframework.jdbc.core: TRACE
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type: DEBUG
+    org.hibernate.transaction: DEBUG
